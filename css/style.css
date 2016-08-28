@@ -1,32 +1,36 @@
 * {
 	padding: 0;
 	margin: 0;
+	border: none;
 }
 
 body {
-	background-color: grey;
+	max-width: 100%;
+	overflow-x:hidden;
 }
 
 .clearfix:after {
 	display: block;
-	content: "";
-	clear: both;
+	content: " ";
+	clear:both;
 }
 
 nav {
 	background-color: black;
 	padding: .5vh;
 	width: 100%;
+	height: 5vh;
+	display: block;
 }
 
 nav a {
-  float: left;
-  text-decoration: none;
-  border-radius: 3px;
-  display: block;
-  color: #ccc;
-  padding: 5px 18px 5px 18px;
-  font-size: 17px;
+	display: inline-block;
+	text-decoration: none;
+	border-radius: 3px;
+	color: #ccc;
+	font-size: 17px;
+	padding: .5vw 2vw;
+	background-color: black;
 }
 
 a:hover {
@@ -35,9 +39,21 @@ a:hover {
 	transition: all .2s ease;
 }
 
+.container {
+	white-space: nowrap;
+}
+
+.mainbar {
+	float: right;
+	width:75vw;
+	background-color: rgba(60,60,60,1);
+	height: 94vh;
+}
+
 .sidebar {
-	float: block;
-	width:30vw;
+	clear: both;
+	float:left;
+	width:25vw;
 	background-color: black;
 	height: 94vh;
 }
@@ -48,38 +64,33 @@ a:hover {
 	float:left;
 	min-width: 38%;
 	margin-left: 2vw;
-	padding: 6px;
+	padding: .5vw;
 	clear:both;
 	border-radius: 3px;
 }
 
 .sidebar a:first-child {
-	margin-left: 0;
+	margin-left: 1vw;
 }
 
-.centerCircle {
-	position:absolute;
-	top:35%;
-	left:57%;
+.cmi {
+	position: absolute;
+	float: left;
 	/*background-color: black;*/
-	z-index: ;
 }
 
 .item {
 	position: absolute;
-	top: -79%;
-	left: 20%;
-	background-color: black;
-	height:260%;
-	z-index: -10;
+	/*background-color: black;*/
 }
 
 .miniItem {
 	position: absolute;
-	/*background-color: blue;*/
-	height:45%;
-	top:-14%;
-	z-index: 100;
+}
+
+
+.miniItem:hover {
+
 }
 
 
@@ -87,32 +98,55 @@ a:hover {
 .label {
 	position: absolute;
 	color: white;
-	text-align: center;
-	width: 84%
-}
-
-.centerCircle .label {
-	margin:40% 10% 0 10%;
-	width: 80%;
+	font-size: 1em;
 }
 
 /*NEED TO TRANSLATE THIS TO JS*/
 
-p {
+ul {
 	position:absolute;
-	width:100%;
-	margin-left: 70%;
+	width:21vw;
+	color: white;
+	background-color: rgba(44,44,44,.98);
+	height:14vh;
 	padding: 5px;
 	z-index: 50;
-	background-color: white;
 	border-radius: 4px;
+	font-size: .8em;
 	display: none;
+}
+
+.cmi ul {
+	top:10%;
+	left: 90%;
+}
+
+.miniItem ul, .item ul {
+	top:50%;
+	left:-20vw;
+}
+
+.productDevelopment ul {
+	top:-50%;
+	left:-20vw;
+}
+
+li {
+	margin-left: 1.2vw;
 }
 
 /*.centerCircle:hover p {
 	display: block;
 }*/
 
+p {
+	display: none;
+}
+
 .textOpen {
 	display: block;
+}
+
+.working {
+	background-color: yellow;
 }
