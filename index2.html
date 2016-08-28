@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Social Intelligence Structure</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+</head>
+<body>
+    <script>
+
+    var radius = d3.scale.linear()
+        .domain([0, 2])
+        .range([100, 140]);
+
+    var fill = d3.scale.linear()
+        .domain([0, 3])
+        .range(["brown", "steelblue"]);
+
+    var svg = d3.select("body").append("svg")
+        .attr("width", 1260)
+        .attr("height", 900)
+      .append("g")
+        .attr("transform", "translate(500,300)");
+
+    var g = svg.selectAll("g")
+        .data(d3.range(0, 360, 2))
+      .enter().append("g")
+        .attr("transform", function(d) { return "rotate(" + d + ")"; });
+
+    var path = g.selectAll("path")
+        .data(d3.range(4))
+      .enter().append("path")
+        .attr("d", d3.svg.arc()
+            .innerRadius(radius)
+            .outerRadius(function(d) { return radius(d) + 9; })
+            .startAngle(0)
+            .endAngle(Math.PI / 90))
+        .attr("fill", fill)
+        .attr("stroke", "black");
+
+    </script>
+</body>
+</html>

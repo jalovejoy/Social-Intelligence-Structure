@@ -1,0 +1,7 @@
+dyld: warning, LC_RPATH @loader_path/../Libraries in /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/bin/java being ignored in restricted program because of @loader_path
+dyld: warning, LC_RPATH @loader_path/../lib in /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/bin/java being ignored in restricted program because of @loader_path
+dyld: warning, LC_RPATH @loader_path/../bundle/Libraries in /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/bin/java being ignored in restricted program because of @loader_path
+dyld: warning, LC_RPATH @loader_path/../Home/lib in /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/bin/java being ignored in restricted program because of @loader_path
+dyld: Library not loaded: @rpath/libjli.jnilib
+  Referenced from: /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/bin/java
+  Reason: image not found
