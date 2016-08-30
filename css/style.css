@@ -7,6 +7,9 @@
 body {
 	max-width: 100%;
 	overflow-x:hidden;
+	color: #ccc;
+	font-size: 16px;
+	text-decoration: none;
 }
 
 .clearfix:after {
@@ -17,10 +20,9 @@ body {
 
 nav {
 	background-color: black;
-	padding: .5vh;
 	width: 100%;
-	height: 5vh;
-	display: block;
+	height: 40px;
+	position: absolute;
 }
 
 nav a {
@@ -28,8 +30,9 @@ nav a {
 	text-decoration: none;
 	border-radius: 3px;
 	color: #ccc;
-	font-size: 17px;
-	padding: .5vw 2vw;
+	font-size: 1.1em;
+	padding: 5px;
+	margin: 5px 10px;
 	background-color: black;
 }
 
@@ -40,14 +43,8 @@ a:hover {
 }
 
 .container {
-	white-space: nowrap;
-}
-
-.mainbar {
-	float: right;
-	width:75vw;
-	background-color: rgba(60,60,60,1);
-	height: 94vh;
+	box-sizing: border-box;
+    padding-top:40px;
 }
 
 .sidebar {
@@ -59,56 +56,77 @@ a:hover {
 }
 
 .sidebar a {
-	color: grey;
+	color: #ccc;
 	text-decoration: none;
 	float:left;
 	min-width: 38%;
-	margin-left: 2vw;
-	padding: .5vw;
+	margin:.3vw 0 .3vw 3vw;
+	padding: .2vw;
 	clear:both;
 	border-radius: 3px;
 }
 
 .sidebar a:first-child {
-	margin-left: 1vw;
+	margin:1vw 0 .3vw 1.5vw;
 }
 
-.cmi {
+.mainbar {
+	float: right;
+	width:75vw;
+	background-color: rgba(60,60,60,.2);
+	height: 94vh;
+}
+
+.cmi, .item, .miniItem{
 	position: absolute;
-	float: left;
 	/*background-color: black;*/
 }
-
-.item {
-	position: absolute;
-	/*background-color: black;*/
-}
-
-.miniItem {
-	position: absolute;
-}
-
-
-.miniItem:hover {
-
-}
-
 
 /*HOW TO CENTER??!?*/
-.label {
+.item span, .cmi span, .miniItem span{
+	width: 100%;
+	top:-12%;
 	position: absolute;
-	color: white;
-	font-size: 1em;
+	color: black;
+	font-size: .9em;
+	float: none;
+	text-align: center;
 }
 
-/*NEED TO TRANSLATE THIS TO JS*/
+.cmi span {
+	top:-6%;
+}
+
+ .it span, .sales span {
+ 	top: 2%;
+ }
+
+.marketing span {
+	/*left:1.4vw;*/
+	top:.3vw;
+}
+
+.miniItem span {
+	left:-50%;
+	top:70%;
+	font-size: .7em;
+	display: none;
+}
+
+.communityManagement span, .publicRelations span, .advert span {
+	left:10%;
+}
+
+/*.miniItem:hover span {
+	display: block;
+}*/
 
 ul {
-	position:absolute;
-	width:21vw;
-	color: white;
-	background-color: rgba(44,44,44,.98);
-	height:14vh;
+	position:fixed;
+	width:200px;
+	color: black;
+	background-color: rgba(255,255,255,.95);
+	height:80px;
 	padding: 5px;
 	z-index: 50;
 	border-radius: 4px;
@@ -116,37 +134,63 @@ ul {
 	display: none;
 }
 
-.cmi ul {
-	top:10%;
-	left: 90%;
-}
-
-.miniItem ul, .item ul {
-	top:50%;
-	left:-20vw;
-}
-
-.productDevelopment ul {
-	top:-50%;
-	left:-20vw;
-}
-
 li {
-	margin-left: 1.2vw;
-}
-
-/*.centerCircle:hover p {
-	display: block;
-}*/
-
-p {
-	display: none;
+	margin-left: 1.4em;
+	font-size: .9em;
 }
 
 .textOpen {
 	display: block;
 }
 
+.overlay {
+	position: fixed;
+	width:72%;
+	height: 88%;
+	margin:1.5% 5% 10% 26.5%;
+	background-color: rgba(44,44,44,.94);
+	z-index: 5000;
+	display: none;
+}
+
+.overlayEsc {
+	background-color: red;
+	height:4vh;
+	width: 2vw;
+	position: fixed;
+	left:96.5vw;
+}
+
+.box {
+	float: left;
+	width:34vw;
+	margin: 1vw;
+	height: 35vh;
+}
+
+.box img {
+	width:80%;
+	height:80%;
+	margin: 1vw;
+}
+
 .working {
 	background-color: yellow;
+}
+
+@media only screen and (max-width: 900px) {
+	body {
+		font-size: 14px;
+	}
+}
+
+@media only screen and (max-width: 750px) {
+	body {
+		font-size: 12px;
+	}
+}
+@media only screen and (min-width: 1300px) {
+	body {
+		width: 1300px;
+	}
 }

@@ -8,9 +8,9 @@
 <body>
 	<nav class="clearfix">
 		<a href="#">Home</a>
-		<a href="#">Home</a>
-		<a href="#">Home</a>
-		<a href="#">Home</a>
+		<a href="#">Resources</a>
+		<a href="#">Understanding the Model</a>
+		<a href="#">About Us</a>
 	</nav>
 	<div class="container">
 		<div class="sidebar">
@@ -25,8 +25,8 @@
 		</div>
 		<div class="mainbar">
 			<div class="cmi" href="#">
-				<div class="label">Consumer Market Insights</div>
-					<ul>
+				<span>Consumer Market Insights</span>
+					<ul class="tooltipRightDown">
 						<li href="#">Market Reserach</li>
 						<li href="#">Competitive Intelligence</li>
 						<li href="#">Brand Health Monitoring</li>
@@ -35,51 +35,115 @@
 					</ul>
 			</div>
 			<div class="item marketing" href="#">
-				<div class="label">Marketing</div>
-				<ul>This is useful for X</ul>
+				<span>Marketing</span>
+<!-- 				<ul class="tooltipLeftDown">
+					<li>Influencer Marketing</li>
+					<li>Public Relations</li>
+					<li>Community Management</li>
+					<li>SEO & Content</li>
+					<li>Marketing Strategy</li>
+					<li>Advertising</li>
+				</ul> -->
 			</div>	
 			<div class="miniItem">
-				<ul>Influencer Marketing</ul>
+				<span>Influencer Marketing</span>
+				<ul class="tooltipLeftUp">Influencer Marketing</ul>
+			</div>
+			<div class="miniItem publicRelations">
+				<span>Public Relations</span>
+				<ul class="tooltipLeftUp">Public Relations</ul>
+			</div>
+			<div class="miniItem communityManagement">
+				<span>Community Management</span>
+				<ul class="tooltipLeftUp">Community Management</ul>
+			</div>
+			<div class="miniItem seo">
+				<span>SEO & Content</span>
+				<ul class="tooltipLeftUp">
+					<li>Tracking Content Themes: Categories</li>
+					<li>Identify Language & Topics: Topics</li>
+					<li>Discover Backlinks: Mentions Search</li>
+					<li>Audience Research: Demographics</li>
+				</ul>
 			</div>
 			<div class="miniItem">
-				<ul>Public Relations</ul>
+				<span>Marketing Strategy</span>
+				<ul class="tooltipLeftUp">Marketing Strategy</ul>
 			</div>
-			<div class="miniItem">
-				<ul>Community Management</ul>
-			</div>
-			<div class="miniItem">
-				<ul>SEO & Content</ul>
-			</div>
-			<div class="miniItem">
-				<ul>Marketing Strategy</ul>
-			</div>
-			<div class="miniItem">
-				<ul>Advertising</ul>
+			<div class="miniItem advert">
+				<span>Advertising</span>
+				<ul class="tooltipLeftUp">
+					<li></li>
+				</ul>
 			</div>
 			<div class="item" href="#">
-				<div class="label">Human Resources</div>
-				<ul>This is useful for X</ul>
-			</div>
-			<div class="item productDevelopment" href="#">
-				<div class="label">Product Development</div>
-				<ul>This is useful for X</ul>
-			</div>
-			<div class="item" href="#">
-				<div class="label">Customer Service</div>
-				<ul>This is useful for X</ul>
+				<span>Human Resources</span>
+				<ul class="tooltipLeftUp">
+					<li>Employee Advocacy</li>
+					<li>Social Hiring</li>
+					<li>Industry Trends Analysis</li>
+				</ul>
 			</div>
 			<div class="item" href="#">
-				<div class="label">Business Strategy</div>
-				<ul>This is useful for X</ul>
+				<span>Product Development</span>
+				<ul class="tooltipLeftUp">
+					<li>Proudct Feedback Analysis</li>
+					<li>Creative & Idea Searching</li>
+					<li>Competitor & Industry Alerts</li>
+				</ul>
+			</div>
+			<div class="item" href="#">
+				<span>Customer Service</span>
+				<ul class="tooltipRightDown">
+					<li>Alerts, Signals, & Triaging Complaints</li>
+					<li>Categorical Anlaysis of Complaints</li>
+					<li>Customer Service Quality Tracking</li>
+				</ul>
+			</div>
+			<div class="item" href="#">
+				<span>Business Strategy</span>
+				<ul class="tooltipRightDown">
+					<li>Market Research</li>
+					<li>Competitive Intelligence</li>
+					<li>Brand Health Monitoring</li>
+				</ul>
 			</div>	
-			<div class="item" href="#">
-				<div class="label">IT</div>
-				<ul>This is useful for X</ul>
+			<div class="item it" href="#">
+				<span>IT</span>
+				<ul class="tooltipRightDown">
+					<li>Alerts & Signals for Website & Tech</br> Malfunctions</li>
+				</ul>
 			</div>
-			<div class="item" href="#">
-				<div class="label">Sales</div>
-				<ul>This is useful for X</ul>
+			<div class="item sales" href="#">
+				<span>Sales</span>
+				<ul class="tooltipLeftDown">
+					<li>Monitoring for Purchase Intent</li>
+					<li>Tracking Activity on Strategic Accounts</li>
+					<li>Receiving Industry Alerts and Topics</li>
+					<li>Understanding Regional Differences</li>
+				</ul>
 			</div>		
+		</div>
+	</div>
+	<div class="overlay">
+		<div class="overlayEsc"></div>
+		<div class="seoOverlay">
+			<div class="box">
+				<h2>Tracking Themes: Categories</h2>
+				<img src="images/SEO-Content_TrackingThemes.png">
+			</div>
+			<div class="box">
+				<h2>Identifying Language & Themes: Topics</h2>
+				<img src="images/SEO-Content_Language-Themes.png">
+			</div>
+			<div class="box">
+				<h2>Discover Backlinks: Mentions Search</h2>
+				<img src="images/SEO-Content_Discover-Backlinks.png">
+			</div>
+			<div class="box">
+				<h2>Audience Research: Demographics</h2>
+				<img src="images/SEO-Content_Demographics.png">
+			</div>
 		</div>
 	</div>
 	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
